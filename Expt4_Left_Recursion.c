@@ -40,3 +40,8 @@ int main() {
         index = 3;
     }
 }
+
+// Enter Number of Production : 2
+// Enter the grammar as E->E-A :
+// A->ABd|Ab|b
+// B->Be|a
