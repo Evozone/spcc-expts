@@ -30,13 +30,12 @@ int main() {
                 printf("%c->%c%c\'", non_terminal, beta, non_terminal);
                 printf("\n%c\'->%c%c\'|E\n", non_terminal, alpha,
                        non_terminal);
+            }else {
+                printf(" can't be reduced\n");
             }
-
-            printf(" can't be reduced\n");
-
-        } else
-
+        } else{
             printf(" is not left recursive.\n");
+        }
         index = 3;
     }
 }
