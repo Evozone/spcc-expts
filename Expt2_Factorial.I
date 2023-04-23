@@ -9,17 +9,13 @@
 %%
 [0-9]+
 { 
-    int number = atoi(yytext), fact = 1;
-    if (number != 0 && number != 1)
-    {
-        for (int i = 2; i <= number; i++)
+    int number = atoi(yytext), fact = 1, i = 1;
+    if (number != 0 || number != 1){
+        for (int i = 2; i <= number; i++){
             fact *= i;
-        printf("The factorial is %d\n", fact);
+        }
     }
-    else
-    {
-        printf("The factorial is 1\n");
-    }
+    printf("The factorial is %d\n", fact);
 }
 
 %%
